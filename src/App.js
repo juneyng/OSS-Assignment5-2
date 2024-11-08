@@ -1,13 +1,13 @@
-import logo from './logo.svg';
+import it from './it.svg';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <img src={it} className="it-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          React를 배워봅시다! 아래 링크를 클릭해주세요!
         </p>
         <a
           className="App-link"
