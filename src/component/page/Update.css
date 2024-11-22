@@ -1,0 +1,84 @@
+/* 공통 컨테이너 스타일 */
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #00695c;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+  max-width: 400px;
+}
+
+label {
+  font-weight: bold;
+  color: #00796b;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #b2dfdb;
+  border-radius: 5px;
+  font-size: 1rem;
+  background-color: #f1f8e9;
+  color: #004d40;
+}
+
+input:focus,
+select:focus {
+  border-color: #00796b;
+  outline: none;
+  box-shadow: 0 0 8px rgba(0, 121, 107, 0.2);
+}
+
+.button-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.submit-button {
+  background-color: #1976d2;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.submit-button:hover {
+  background-color: #1565c0;
+  transform: translateY(-2px);
+}
+
+.cancel-button {
+  background-color: #d32f2f;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.cancel-button:hover {
+  background-color: #b71c1c;
+  transform: translateY(-2px);
+}

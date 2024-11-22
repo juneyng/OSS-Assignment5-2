@@ -1,0 +1,82 @@
+/* 공통 컨테이너 스타일 */
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #00695c;
+}
+
+/* 학생 목록 스타일 */
+.students-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  max-width: 800px;
+}
+
+.student-item {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  padding: 20px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.student-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+.student-item p {
+  margin: 5px 0;
+  font-size: 1rem;
+  color: #004d40;
+}
+/* 버튼 컨테이너 */
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* 버튼 간격 조정 */
+  margin-bottom: 20px;
+}
+
+/* CREATE 버튼 스타일 */
+.button-container button:nth-child(1) {
+  background-color: #1976d2; /* 파란색 */
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.button-container button:nth-child(1):hover {
+  background-color: #1565c0; /* 더 짙은 파란색 */
+  transform: translateY(-2px);
+}
+
+/* DELETE 버튼 스타일 */
+.button-container button:nth-child(2) {
+  background-color: #d32f2f; /* 빨간색 */
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.button-container button:nth-child(2):hover {
+  background-color: #b71c1c; /* 더 짙은 빨간색 */
+  transform: translateY(-2px);
+}
